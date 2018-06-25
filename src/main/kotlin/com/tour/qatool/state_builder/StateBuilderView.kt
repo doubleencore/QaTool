@@ -63,10 +63,6 @@ class StateBuilderView : DockableView("Schema State Builder") {
     val greyDirectoryClass = PseudoClass.getPseudoClass("greydir")
     val boldFilesClass = PseudoClass.getPseudoClass("boldfiles")
 
-    init {
-
-    }
-
     override fun onDock() {
         System.out.println("onDock")
         super.onDock()
