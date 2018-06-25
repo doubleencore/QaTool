@@ -1,0 +1,97 @@
+{
+  "upcoming_tournaments": [{
+    "id": "r471",
+    "name": "Quicken Loans National",
+    "location": "TPC Potomac at Avenel Farm, Potomac, MD"
+  }],
+  "tournaments": [
+    {
+      "id": "r011",
+      "purse": "$10,500,000",
+      "course_city_state": "Ponte Vedra Beach, FL",
+      "course_name": "TPC Sawgrass",
+      "location": "TPC Sawgrass, Ponte Vedra Beach, FL",
+      "start_date": "2017-05-11",
+      "end_date": "2017-05-14",
+      "breaking_news": "",
+      "file": "/opt/PGATour/iPadPublisher/data//static/tournaments/r011/home.xml",
+      "name": "THE PLAYERS Championship",
+      "standings_points": "3,375",
+      "winning_share": "$1,890,000",
+      "current_round": "4",
+      "total_rounds": "4",
+      "official": false,
+      "round_status": "Official",
+      "dual_course": false,
+      "field": "not available",
+      "primary_tournament": true,
+      "yardage": "request move to lb",
+      "major_tournament": false,
+      "matchplay_tournament": false,
+      "playoff": false,
+      "scoring_type": 3,
+      "stableford": false,
+      "featured_groups": [],
+      "courses": [
+        {
+          "position": "1",
+          "course_id": "011",
+          "course_code": "SA",
+          "course_name": "TPC Sawgrass"
+        }
+      ]
+    }
+  ],
+  "tv": {
+    "tune_in": [
+      {
+        "network": "FACEBOOK WATCH",
+        "end_time_known": true,
+        "live": true,
+        "id": "r034",
+        "start_date": "2018-06-24T08:30:00-04:00",
+        "end_date": "2018-06-24T13:00:00-04:00"
+      },
+      {
+        "network": "GOLF",
+        "end_time_known": true,
+        "live": true,
+        "id": "r034",
+        "start_date": "2018-06-24T13:00:00-04:00",
+        "end_date": "2018-06-24T14:45:00-04:00"
+      },
+      {
+        "network": "PGA TOUR LIVE",
+        "end_time_known": true,
+        "live": true,
+        "id": "r034",
+        "start_date": "2018-06-24T13:00:00-04:00",
+        "end_date": "2018-06-24T18:00:00-04:00"
+      },
+      {
+        "network": "PGA TOUR RADIO",
+        "end_time_known": true,
+        "live": true,
+        "id": "r034",
+        "start_date": "2018-06-24T13:00:00-04:00",
+        "end_date": "2018-06-24T18:00:00-04:00"
+      },
+      {
+        "network": "CBS",
+        "end_time_known": true,
+        "live": true,
+        "id": "r034",
+        "start_date": "2018-06-24T15:00:00-04:00",
+        "end_date": "2018-06-24T18:00:00-04:00"
+      },
+      {
+        "network": "GOLF",
+        "end_time_known": true,
+        "live": false,
+        "id": "r034",
+        "start_date": "2018-06-24T20:00:00-04:00",
+        "end_date": "2018-06-24T00:30:00-04:00"
+      }
+    ]
+  }
+}

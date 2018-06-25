@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Stats",
+    "definitions": {
+        "Stats": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "driving_distance": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "driving_distance_avg": {
+                    "$ref": "#/definitions/Avg"
+                },
+                "scoring_average": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "scoring_average_avg": {
+                    "$ref": "#/definitions/Avg"
+                },
+                "gir": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "gir_avg": {
+                    "$ref": "#/definitions/Avg"
+                },
+                "scrambling": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "scrambling_avg": {
+                    "$ref": "#/definitions/Avg"
+                },
+                "driving_accurat": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "driving_accurat_avg": {
+                    "$ref": "#/definitions/Avg"
+                },
+                "strokes_gained_putting": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DrivingAccurat"
+                    }
+                },
+                "strokes_gained_putting_avg": {
+                    "$ref": "#/definitions/Avg"
+                }
+            },
+            "required": [
+                "driving_accurat",
+                "driving_accurat_avg",
+                "driving_distance",
+                "driving_distance_avg",
+                "gir",
+                "gir_avg",
+                "scoring_average",
+                "scoring_average_avg",
+                "scrambling",
+                "scrambling_avg",
+                "strokes_gained_putting",
+                "strokes_gained_putting_avg"
+            ],
+            "title": "Stats"
+        },
+        "DrivingAccurat": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "rank": {
+                    "type": "string"
+                },
+                "pid": {
+                    "type": "string"
+                },
+                "score": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "pid",
+                "rank",
+                "score"
+            ],
+            "title": "DrivingAccurat"
+        },
+        "Avg": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "average": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "average"
+            ],
+            "title": "Avg"
+        }
+    }
+}

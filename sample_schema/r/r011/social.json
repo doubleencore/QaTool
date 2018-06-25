@@ -1,0 +1,112 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Social",
+    "definitions": {
+        "Social": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "count": {
+                    "type": "integer"
+                },
+                "lastUpdated": {
+                    "type": "string"
+                },
+                "feed_items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/FeedItem"
+                    }
+                }
+            },
+            "required": [
+                "count",
+                "feed_items",
+                "lastUpdated"
+            ],
+            "title": "Social"
+        },
+        "FeedItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "picture": {
+                    "type": "string"
+                },
+                "id": {
+                    "$ref": "#/definitions/ID"
+                },
+                "guid": {
+                    "type": "string"
+                },
+                "postedVia": {
+                    "$ref": "#/definitions/PostedVia"
+                },
+                "source": {
+                    "$ref": "#/definitions/Source"
+                },
+                "serviceId": {
+                    "type": "integer"
+                },
+                "pictureRetina": {
+                    "type": "string"
+                },
+                "timePosted": {
+                    "type": "string"
+                },
+                "mail": {
+                    "$ref": "#/definitions/Mail"
+                },
+                "blurb": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "blurb",
+                "guid",
+                "id",
+                "mail",
+                "picture",
+                "pictureRetina",
+                "postedVia",
+                "serviceId",
+                "source",
+                "timePosted"
+            ],
+            "title": "FeedItem"
+        },
+        "ID": {
+            "type": "string",
+            "enum": [
+                ""
+            ],
+            "title": "ID"
+        },
+        "Mail": {
+            "type": "string",
+            "enum": [
+                "twitter"
+            ],
+            "title": "Mail"
+        },
+        "PostedVia": {
+            "type": "string",
+            "enum": [
+                "Twitter Web Client",
+                "Spredfast",
+                "SnappyTV.com",
+                "TweetDeck",
+                "Twitter for iPhone",
+                "Periscope"
+            ],
+            "title": "PostedVia"
+        },
+        "Source": {
+            "type": "string",
+            "enum": [
+                "PGATOUR"
+            ],
+            "title": "Source"
+        }
+    }
+}

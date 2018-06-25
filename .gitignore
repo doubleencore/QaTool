@@ -1,0 +1,45 @@
+# Ant
+bin
+gen
+build.xml
+ant.properties
+local.properties
+
+# OSX Noise
+.DS_Store
+
+# IntelliJ idea
+out
+*.iml
+*.ipr
+*.iws
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/datasources.xml
+**/.idea/dataSources.ids
+**/.idea/gradle.xml
+**/.idea/misc.xml
+**/.idea/modules.xml
+**/.idea/libraries
+**/.idea/dictionaries
+**/.idea/codeStyleSettings.xml
+**/.idea/kotlinc.xml
+**/.idea/scopes
+**/.idea/scopes/scope_settings.xml
+**/.idea/markdown-exported-files.xml
+**/.idea/markdown-navigator.xml
+**/.idea/markdown-navigator/profiles_settings.xml
+**/.idea/inspectionProfiles
+**/.idea/caches
+**/.idea/codeStyles
+
+# Gradle
+build
+.gradle
+
+# Maven
+target
+release.properties
+pom.xml.*
+
+captures

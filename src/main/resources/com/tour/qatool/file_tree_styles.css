@@ -1,0 +1,9 @@
+
+
+  *.tree-cell:greydir {
+      -fx-text-fill: #BEBEBE;
+  }
+
+    *.tree-cell:boldfiles .label {
+        -fx-font-weight: bold
+    }

@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/TeamleaderboardPlayoff",
+    "definitions": {
+        "TeamleaderboardPlayoff": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "winner": {
+                    "type": "string"
+                },
+                "eliminated": {
+                    "type": "array",
+                    "items": {}
+                },
+                "rounds": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "eliminated",
+                "rounds",
+                "winner"
+            ],
+            "title": "TeamleaderboardPlayoff"
+        }
+    }
+}

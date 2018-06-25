@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/AllPlayers",
+    "definitions": {
+        "AllPlayers": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "year": {
+                    "type": "string"
+                },
+                "players": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Player"
+                    }
+                }
+            },
+            "required": [
+                "players",
+                "year"
+            ],
+            "title": "AllPlayers"
+        },
+        "Player": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pid": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "short_name": {
+                    "type": "string"
+                },
+                "birthplace": {
+                    "type": "string"
+                },
+                "birthcity": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "primary": {
+                    "$ref": "#/definitions/Primary"
+                },
+                "lng": {
+                    "type": "string"
+                },
+                "lat": {
+                    "type": "string"
+                },
+                "amateur": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "amateur",
+                "birthcity",
+                "birthplace",
+                "country",
+                "first_name",
+                "last_name",
+                "lat",
+                "lng",
+                "pid",
+                "primary",
+                "short_name"
+            ],
+            "title": "Player"
+        },
+        "Primary": {
+            "type": "string",
+            "enum": [
+                "r",
+                "",
+                "h",
+                "s"
+            ],
+            "title": "Primary"
+        }
+    }
+}

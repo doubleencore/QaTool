@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Schedule",
+    "definitions": {
+        "Schedule": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "schedule": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ScheduleElement"
+                    }
+                }
+            },
+            "required": [
+                "schedule"
+            ],
+            "title": "Schedule"
+        },
+        "ScheduleElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tournament": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "course_name": {
+                    "type": "string"
+                },
+                "tournament_id": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "current_tournament": {
+                    "type": "boolean"
+                },
+                "end_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "start_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "networks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Network"
+                    }
+                },
+                "defending_champions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/DefendingChampion"
+                    }
+                }
+            },
+            "required": [
+                "course_name",
+                "current_tournament",
+                "defending_champions",
+                "end_date",
+                "location",
+                "networks",
+                "start_date",
+                "tournament",
+                "tournament_id",
+                "url"
+            ],
+            "title": "ScheduleElement"
+        },
+        "DefendingChampion": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "member": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "member",
+                "name"
+            ],
+            "title": "DefendingChampion"
+        },
+        "Network": {
+            "type": "string",
+            "enum": [
+                "PGA TOUR RADIO",
+                "GOLF",
+                "ESPN",
+                "NBC",
+                "CBS",
+                "PGA TOUR LIVE",
+                "DIRECTV",
+                "FS1",
+                "FOX",
+                "TNT",
+                "GOLF LIVE EXTRA"
+            ],
+            "title": "Network"
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Broadcast",
+    "definitions": {
+        "Broadcast": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "msg": {
+                    "type": "string"
+                },
+                "televised": {
+                    "type": "boolean"
+                },
+                "times": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Time"
+                    }
+                }
+            },
+            "required": [
+                "msg",
+                "televised",
+                "times"
+            ],
+            "title": "Broadcast"
+        },
+        "Time": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "end_time_known": {
+                    "type": "boolean"
+                },
+                "live": {
+                    "type": "boolean"
+                },
+                "network": {
+                    "type": "string"
+                },
+                "start_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "end_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "end_date",
+                "end_time_known",
+                "live",
+                "network",
+                "start_date"
+            ],
+            "title": "Time"
+        }
+    }
+}

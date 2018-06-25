@@ -1,0 +1,1175 @@
+{
+  "schedule": [
+    {
+      "tournament": "Safeway Open",
+      "location": "Napa, CA",
+      "course_name": "Silverado Resort and Spa North",
+      "tournament_id": "r464",
+      "url": "https://www.pgatour.com/tournaments/safeway-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-10-16",
+      "start_date": "2016-10-12",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "29518",
+          "member": true,
+          "name": "Brendan Steele"
+        }
+      ]
+    },
+    {
+      "tournament": "CIMB Classic",
+      "location": "Kuala Lumpur, MAS",
+      "course_name": "TPC Kuala Lumpur",
+      "tournament_id": "r494",
+      "url": "https://www.pgatour.com/tournaments/cimb-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-10-23",
+      "start_date": "2016-10-20",
+      "networks": [
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "33448",
+          "member": true,
+          "name": "Justin Thomas"
+        }
+      ]
+    },
+    {
+      "tournament": "Sanderson Farms Championship",
+      "location": "Jackson, MS",
+      "course_name": "CC of Jackson",
+      "tournament_id": "r054",
+      "url": "https://www.pgatour.com/tournaments/sanderson-farms-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-10-30",
+      "start_date": "2016-10-27",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "39954",
+          "member": true,
+          "name": "Cody Gribble"
+        }
+      ]
+    },
+    {
+      "tournament": "World Golf Championships-HSBC Champions",
+      "location": "Shanghai, CHN",
+      "course_name": "Sheshan International GC",
+      "tournament_id": "r489",
+      "url": "https://www.pgatour.com/tournaments/wgc-hsbc-champions.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-10-30",
+      "start_date": "2016-10-27",
+      "networks": [
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "32839",
+          "member": true,
+          "name": "Hideki Matsuyama"
+        }
+      ]
+    },
+    {
+      "tournament": "Shriners Hospitals for Children Open",
+      "location": "Las Vegas, NV",
+      "course_name": "TPC Summerlin",
+      "tournament_id": "r047",
+      "url": "https://www.pgatour.com/tournaments/shriners-hospitals-for-children-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-11-06",
+      "start_date": "2016-11-03",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "20572",
+          "member": true,
+          "name": "Rod Pampling"
+        }
+      ]
+    },
+    {
+      "tournament": "OHL Classic at Mayakoba",
+      "location": "Playa del Carmen, MEX",
+      "course_name": "El Camaleon GC",
+      "tournament_id": "r457",
+      "url": "https://www.pgatour.com/tournaments/ohl-classic-mayakoba.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-11-13",
+      "start_date": "2016-11-10",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "24361",
+          "member": true,
+          "name": "Pat Perez"
+        }
+      ]
+    },
+    {
+      "tournament": "The RSM Classic",
+      "location": "Sea Island, GA",
+      "course_name": "Sea Island Resort (Seaside)",
+      "tournament_id": "r493",
+      "url": "https://www.pgatour.com/tournaments/the-rsm-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-11-20",
+      "start_date": "2016-11-17",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "35506",
+          "member": true,
+          "name": "Mac Hughes"
+        }
+      ]
+    },
+    {
+      "tournament": "ISPS HANDA World Cup of Golf",
+      "location": "Melbourne, AUS",
+      "course_name": "Kingston Heath Golf Club",
+      "tournament_id": "r169",
+      "url": "https://www.pgatour.com/tournaments/melbourne-world-cup-of-golf.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-11-27",
+      "start_date": "2016-11-24",
+      "networks": [],
+      "defending_champions": [
+        {
+          "id": "00000",
+          "member": false,
+          "name": " Denmark"
+        }
+      ]
+    },
+    {
+      "tournament": "Hero World Challenge",
+      "location": "New Providence, BAH",
+      "course_name": "Albany",
+      "tournament_id": "r478",
+      "url": "https://www.pgatour.com/tournaments/hero-world-challenge.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-12-04",
+      "start_date": "2016-12-01",
+      "networks": [
+        "GOLF",
+        "ESPN",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "32839",
+          "member": true,
+          "name": "Hideki Matsuyama"
+        }
+      ]
+    },
+    {
+      "tournament": "Franklin Templeton Shootout",
+      "location": "Naples, FL",
+      "course_name": "Tiburón GC",
+      "tournament_id": "r058",
+      "url": "https://www.pgatour.com/tournaments/qbe-shootout.webview.html",
+      "current_tournament": false,
+      "end_date": "2016-12-10",
+      "start_date": "2016-12-08",
+      "networks": [
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "34099",
+          "member": true,
+          "name": "Harris English"
+        },
+        {
+          "id": "23108",
+          "member": true,
+          "name": "Matt Kuchar"
+        }
+      ]
+    },
+    {
+      "tournament": "SBS Tournament of Champions",
+      "location": "Kapalua, HI",
+      "course_name": "Plantation Course at Kapalua",
+      "tournament_id": "r016",
+      "url": "https://www.pgatour.com/tournaments/sentry-tournament-of-champions.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-01-08",
+      "start_date": "2017-01-05",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "33448",
+          "member": true,
+          "name": "Justin Thomas"
+        }
+      ]
+    },
+    {
+      "tournament": "Sony Open in Hawaii",
+      "location": "Honolulu, HI",
+      "course_name": "Waialae CC",
+      "tournament_id": "r006",
+      "url": "https://www.pgatour.com/tournaments/sony-open-in-hawaii.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-01-15",
+      "start_date": "2017-01-12",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "33448",
+          "member": true,
+          "name": "Justin Thomas"
+        }
+      ]
+    },
+    {
+      "tournament": "CareerBuilder Challenge",
+      "location": "La Quinta, CA",
+      "course_name": "Stadium Course",
+      "tournament_id": "r002",
+      "url": "https://www.pgatour.com/tournaments/careerbuilder-challenge.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-01-22",
+      "start_date": "2017-01-19",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "34264",
+          "member": true,
+          "name": "Hudson Swafford"
+        }
+      ]
+    },
+    {
+      "tournament": "Farmers Insurance Open",
+      "location": "San Diego, CA",
+      "course_name": "Torrey Pines GC (South)",
+      "tournament_id": "r004",
+      "url": "https://www.pgatour.com/tournaments/farmers-insurance-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-01-29",
+      "start_date": "2017-01-26",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "46970",
+          "member": true,
+          "name": "Jon Rahm"
+        }
+      ]
+    },
+    {
+      "tournament": "Waste Management Phoenix Open",
+      "location": "Scottsdale, AZ",
+      "course_name": "TPC Scottsdale",
+      "tournament_id": "r003",
+      "url": "https://www.pgatour.com/tournaments/waste-management-phoenix-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-02-05",
+      "start_date": "2017-02-02",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "32839",
+          "member": true,
+          "name": "Hideki Matsuyama"
+        }
+      ]
+    },
+    {
+      "tournament": "AT&T Pebble Beach Pro-Am",
+      "location": "Pebble Beach, CA",
+      "course_name": "Pebble Beach GL",
+      "tournament_id": "r005",
+      "url": "https://www.pgatour.com/tournaments/at-t-pebble-beach-pro-am.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-02-12",
+      "start_date": "2017-02-09",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "DIRECTV",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "34046",
+          "member": true,
+          "name": "Jordan Spieth"
+        }
+      ]
+    },
+    {
+      "tournament": "Genesis Open",
+      "location": "Pacific Palisades, CA",
+      "course_name": "Riviera CC",
+      "tournament_id": "r007",
+      "url": "https://www.pgatour.com/tournaments/genesis-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-02-19",
+      "start_date": "2017-02-16",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "30925",
+          "member": true,
+          "name": "Dustin Johnson"
+        }
+      ]
+    },
+    {
+      "tournament": "The Honda Classic",
+      "location": "Palm Beach Gardens, FL",
+      "course_name": "PGA National (Champion)",
+      "tournament_id": "r010",
+      "url": "https://www.pgatour.com/tournaments/the-honda-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-02-26",
+      "start_date": "2017-02-23",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "32102",
+          "member": true,
+          "name": "Rickie Fowler"
+        }
+      ]
+    },
+    {
+      "tournament": "World Golf Championships-Mexico Championship",
+      "location": "Mexico City, MEX",
+      "course_name": "Club de Golf Chapultepec",
+      "tournament_id": "r473",
+      "url": "https://www.pgatour.com/tournaments/wgc-mexico-championship/en.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-03-05",
+      "start_date": "2017-03-02",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "30925",
+          "member": true,
+          "name": "Dustin Johnson"
+        }
+      ]
+    },
+    {
+      "tournament": "Valspar Championship",
+      "location": "Palm Harbor, FL",
+      "course_name": "Innisbrook Resort (Copperhead)",
+      "tournament_id": "r475",
+      "url": "https://www.pgatour.com/tournaments/valspar-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-03-12",
+      "start_date": "2017-03-09",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "33399",
+          "member": true,
+          "name": "Adam Hadwin"
+        }
+      ]
+    },
+    {
+      "tournament": "Arnold Palmer Invitational presented by Mastercard",
+      "location": "Orlando, FL",
+      "course_name": "Bay Hill Club & Lodge",
+      "tournament_id": "r009",
+      "url": "https://www.pgatour.com/tournaments/arnold-palmer-invitational-presented-by-mastercard.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-03-19",
+      "start_date": "2017-03-16",
+      "networks": [
+        "GOLF",
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "26851",
+          "member": true,
+          "name": "Marc Leishman"
+        }
+      ]
+    },
+    {
+      "tournament": "Puerto Rico Open",
+      "location": "Rio Grande, PUR",
+      "course_name": "Coco Beach Golf & CC",
+      "tournament_id": "r483",
+      "url": "https://www.pgatour.com/tournaments/puerto-rico-open.webview.html",
+      "current_tournament": true,
+      "end_date": "2017-03-26",
+      "start_date": "2017-03-23",
+      "networks": [
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "25240",
+          "member": true,
+          "name": "D.A. Points"
+        }
+      ]
+    },
+    {
+      "tournament": "World Golf Championships-Dell Technologies Match Play",
+      "location": "Austin, TX",
+      "course_name": "Austin Country Club",
+      "tournament_id": "r470",
+      "url": "https://www.pgatour.com/tournaments/wgc-dell-technologies-match-play.webview.html",
+      "current_tournament": true,
+      "end_date": "2017-03-26",
+      "start_date": "2017-03-22",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "30925",
+          "member": true,
+          "name": "Dustin Johnson"
+        }
+      ]
+    },
+    {
+      "tournament": "Shell Houston Open",
+      "location": "Humble, TX",
+      "course_name": "GC of Houston",
+      "tournament_id": "r020",
+      "url": "https://www.pgatour.com/tournaments/houston-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-04-02",
+      "start_date": "2017-03-30",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "34098",
+          "member": true,
+          "name": "Russell Henley"
+        }
+      ]
+    },
+    {
+      "tournament": "Masters Tournament",
+      "location": "Augusta, GA",
+      "course_name": "Augusta National GC",
+      "tournament_id": "r014",
+      "url": "https://www.pgatour.com/tournaments/masters-tournament.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-04-09",
+      "start_date": "2017-04-06",
+      "networks": [
+        "ESPN",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "21209",
+          "member": true,
+          "name": "Sergio Garcia"
+        }
+      ]
+    },
+    {
+      "tournament": "RBC Heritage",
+      "location": "Hilton Head, SC",
+      "course_name": "Harbour Town GL",
+      "tournament_id": "r012",
+      "url": "https://www.pgatour.com/tournaments/rbc-heritage.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-04-16",
+      "start_date": "2017-04-13",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "48084",
+          "member": true,
+          "name": "Wesley Bryan"
+        }
+      ]
+    },
+    {
+      "tournament": "Valero Texas Open",
+      "location": "San Antonio, TX",
+      "course_name": "TPC San Antonio - AT&T Oaks",
+      "tournament_id": "r041",
+      "url": "https://www.pgatour.com/tournaments/valero-texas-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-04-23",
+      "start_date": "2017-04-20",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "32366",
+          "member": true,
+          "name": "Kevin Chappell"
+        }
+      ]
+    },
+    {
+      "tournament": "Zurich Classic of New Orleans",
+      "location": "Avondale, LA",
+      "course_name": "TPC Louisiana",
+      "tournament_id": "r018",
+      "url": "https://www.pgatour.com/tournaments/zurich-classic-of-new-orleans.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-04-30",
+      "start_date": "2017-04-27",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "27895",
+          "member": true,
+          "name": "Jonas Blixt"
+        },
+        {
+          "id": "35891",
+          "member": true,
+          "name": "Cameron Smith"
+        }
+      ]
+    },
+    {
+      "tournament": "Wells Fargo Championship",
+      "location": "Wilmington, NC",
+      "course_name": "Eagle Point Golf Club",
+      "tournament_id": "r480",
+      "url": "https://www.pgatour.com/tournaments/wells-fargo-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-05-07",
+      "start_date": "2017-05-04",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "27644",
+          "member": true,
+          "name": "Brian Harman"
+        }
+      ]
+    },
+    {
+      "tournament": "THE PLAYERS Championship",
+      "location": "Ponte Vedra Beach, FL",
+      "course_name": "TPC Sawgrass",
+      "tournament_id": "r011",
+      "url": "https://www.pgatour.co.kr/content/the-players.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-05-14",
+      "start_date": "2017-05-11",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "37455",
+          "member": true,
+          "name": "Si Woo Kim"
+        }
+      ]
+    },
+    {
+      "tournament": "AT&T Byron Nelson",
+      "location": "Irving, TX",
+      "course_name": "TPC Four Seasons Resort",
+      "tournament_id": "r019",
+      "url": "https://www.pgatour.com/tournaments/at-t-byron-nelson.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-05-21",
+      "start_date": "2017-05-18",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS",
+        "DIRECTV"
+      ],
+      "defending_champions": [
+        {
+          "id": "29420",
+          "member": true,
+          "name": "Billy Horschel"
+        }
+      ]
+    },
+    {
+      "tournament": "DEAN & DELUCA Invitational",
+      "location": "Fort Worth, TX",
+      "course_name": "Colonial CC",
+      "tournament_id": "r021",
+      "url": "https://www.pgatour.com/tournaments/fort-worth-invitational.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-05-28",
+      "start_date": "2017-05-25",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "29478",
+          "member": true,
+          "name": "Kevin Kisner"
+        }
+      ]
+    },
+    {
+      "tournament": "the Memorial Tournament presented by Nationwide",
+      "location": "Dublin, OH",
+      "course_name": "Muirfield Village GC",
+      "tournament_id": "r023",
+      "url": "https://www.pgatour.com/tournaments/the-memorial-tournament-presented-by-nationwide.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-06-04",
+      "start_date": "2017-06-01",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "25686",
+          "member": true,
+          "name": "Jason Dufner"
+        }
+      ]
+    },
+    {
+      "tournament": "FedEx St. Jude Classic",
+      "location": "Memphis, TN",
+      "course_name": "TPC Southwind",
+      "tournament_id": "r025",
+      "url": "https://www.pgatour.com/tournaments/fedex-st-jude-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-06-11",
+      "start_date": "2017-06-08",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "40026",
+          "member": true,
+          "name": "Daniel Berger"
+        }
+      ]
+    },
+    {
+      "tournament": "U.S. Open",
+      "location": "Erin, WI",
+      "course_name": "Erin Hills",
+      "tournament_id": "r026",
+      "url": "https://www.pgatour.com/tournaments/us-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-06-18",
+      "start_date": "2017-06-15",
+      "networks": [
+        "FS1",
+        "FOX"
+      ],
+      "defending_champions": [
+        {
+          "id": "36689",
+          "member": true,
+          "name": "Brooks Koepka"
+        }
+      ]
+    },
+    {
+      "tournament": "CVS Health Charity Classic",
+      "location": "Barrington, RI",
+      "course_name": "Rhode Island CC",
+      "tournament_id": "r486",
+      "url": "",
+      "current_tournament": false,
+      "end_date": "2017-06-20",
+      "start_date": "2017-06-19",
+      "networks": [],
+      "defending_champions": [
+        {
+          "id": "01024",
+          "member": true,
+          "name": "Billy Andrade"
+        },
+        {
+          "id": "33141",
+          "member": true,
+          "name": "Keegan Bradley"
+        },
+        {
+          "id": "50675",
+          "member": false,
+          "name": "Brooke Henderson"
+        }
+      ]
+    },
+    {
+      "tournament": "Travelers Championship",
+      "location": "Cromwell, CT",
+      "course_name": "TPC River Highlands",
+      "tournament_id": "r034",
+      "url": "https://www.pgatour.com/tournaments/travelers-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-06-25",
+      "start_date": "2017-06-22",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "34046",
+          "member": true,
+          "name": "Jordan Spieth"
+        }
+      ]
+    },
+    {
+      "tournament": "Quicken Loans National",
+      "location": "Potomac, MD",
+      "course_name": "TPC Potomac at Avenel Farm",
+      "tournament_id": "r471",
+      "url": "https://www.pgatour.com/tournaments/the-national.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-02",
+      "start_date": "2017-06-29",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "30110",
+          "member": true,
+          "name": "Kyle Stanley"
+        }
+      ]
+    },
+    {
+      "tournament": "The Greenbrier Classic",
+      "location": "White Sulphur Springs, WV",
+      "course_name": "The Old White TPC",
+      "tournament_id": "r490",
+      "url": "https://www.pgatour.com/tournaments/the-greenbrier-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-09",
+      "start_date": "2017-07-06",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "48081",
+          "member": true,
+          "name": "Xander Schauffele"
+        }
+      ]
+    },
+    {
+      "tournament": "John Deere Classic",
+      "location": "Silvis, IL",
+      "course_name": "TPC Deere Run",
+      "tournament_id": "r030",
+      "url": "https://www.pgatour.com/tournaments/john-deere-classic.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-16",
+      "start_date": "2017-07-13",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "47959",
+          "member": true,
+          "name": "Bryson DeChambeau"
+        }
+      ]
+    },
+    {
+      "tournament": "Barbasol Championship",
+      "location": "Auburn/Opelika, AL",
+      "course_name": "RTJ Trail (Grand National)",
+      "tournament_id": "r518",
+      "url": "https://www.pgatour.com/tournaments/barbasol-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-23",
+      "start_date": "2017-07-20",
+      "networks": [
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "34213",
+          "member": true,
+          "name": "Grayson Murray"
+        }
+      ]
+    },
+    {
+      "tournament": "The Open Championship",
+      "location": "Southport, ENG",
+      "course_name": "Royal Birkdale GC",
+      "tournament_id": "r100",
+      "url": "https://www.pgatour.com/tournaments/the-open-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-23",
+      "start_date": "2017-07-20",
+      "networks": [
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "34046",
+          "member": true,
+          "name": "Jordan Spieth"
+        }
+      ]
+    },
+    {
+      "tournament": "RBC Canadian Open",
+      "location": "Oakville, ON",
+      "course_name": "Glen Abbey GC",
+      "tournament_id": "r032",
+      "url": "https://www.pgatour.com/tournaments/rbc-canadian-open.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-07-30",
+      "start_date": "2017-07-27",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "27064",
+          "member": true,
+          "name": "Jhonattan Vegas"
+        }
+      ]
+    },
+    {
+      "tournament": "Barracuda Championship",
+      "location": "Reno, NV",
+      "course_name": "Montreux G&CC",
+      "tournament_id": "r472",
+      "url": "https://www.pgatour.com/tournaments/barracuda-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-08-06",
+      "start_date": "2017-08-03",
+      "networks": [
+        "GOLF"
+      ],
+      "defending_champions": [
+        {
+          "id": "27963",
+          "member": true,
+          "name": "Chris Stroud"
+        }
+      ]
+    },
+    {
+      "tournament": "World Golf Championships-Bridgestone Invitational",
+      "location": "Akron, OH",
+      "course_name": "Firestone CC (South)",
+      "tournament_id": "r476",
+      "url": "https://www.pgatour.com/tournaments/wgc-bridgestone-invitational.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-08-06",
+      "start_date": "2017-08-03",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "32839",
+          "member": true,
+          "name": "Hideki Matsuyama"
+        }
+      ]
+    },
+    {
+      "tournament": "PGA Championship",
+      "location": "Charlotte, NC",
+      "course_name": "Quail Hollow-PGA Championship",
+      "tournament_id": "r033",
+      "url": "https://www.pgatour.com/tournaments/pga-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-08-13",
+      "start_date": "2017-08-10",
+      "networks": [
+        "TNT",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "33448",
+          "member": true,
+          "name": "Justin Thomas"
+        }
+      ]
+    },
+    {
+      "tournament": "Wyndham Championship",
+      "location": "Greensboro, NC",
+      "course_name": "Sedgefield CC",
+      "tournament_id": "r013",
+      "url": "https://www.pgatour.com/tournaments/wyndham-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-08-20",
+      "start_date": "2017-08-17",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "GOLF LIVE EXTRA",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "21528",
+          "member": true,
+          "name": "Henrik Stenson"
+        }
+      ]
+    },
+    {
+      "tournament": "THE NORTHERN TRUST",
+      "location": "Old Westbury, NY",
+      "course_name": "Glen Oaks Club",
+      "tournament_id": "r027",
+      "url": "https://www.pgatour.com/tournaments/the-northern-trust.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-08-27",
+      "start_date": "2017-08-24",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "CBS"
+      ],
+      "defending_champions": [
+        {
+          "id": "30925",
+          "member": true,
+          "name": "Dustin Johnson"
+        }
+      ]
+    },
+    {
+      "tournament": "Dell Technologies Championship",
+      "location": "Norton, MA",
+      "course_name": "TPC Boston",
+      "tournament_id": "r505",
+      "url": "https://www.pgatour.com/tournaments/dell-technologies-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-09-04",
+      "start_date": "2017-09-01",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "33448",
+          "member": true,
+          "name": "Justin Thomas"
+        }
+      ]
+    },
+    {
+      "tournament": "BMW Championship",
+      "location": "Lake Forest, IL",
+      "course_name": "Conway Farms GC",
+      "tournament_id": "r028",
+      "url": "https://www.pgatour.com/tournaments/bmw-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-09-17",
+      "start_date": "2017-09-14",
+      "networks": [
+        "GOLF",
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "26851",
+          "member": true,
+          "name": "Marc Leishman"
+        }
+      ]
+    },
+    {
+      "tournament": "TOUR Championship",
+      "location": "Atlanta, GA",
+      "course_name": "East Lake GC",
+      "tournament_id": "r060",
+      "url": "https://www.pgatour.com/tournaments/tour-championship.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-09-24",
+      "start_date": "2017-09-21",
+      "networks": [
+        "PGA TOUR LIVE",
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "48081",
+          "member": true,
+          "name": "Xander Schauffele"
+        }
+      ]
+    },
+    {
+      "tournament": "Presidents Cup",
+      "location": "Jersey City, NJ",
+      "course_name": "Liberty National GC",
+      "tournament_id": "r500",
+      "url": "https://www.pgatour.co.kr/content/presidents-cup.webview.html",
+      "current_tournament": false,
+      "end_date": "2017-10-01",
+      "start_date": "2017-09-28",
+      "networks": [
+        "PGA TOUR RADIO",
+        "GOLF",
+        "NBC"
+      ],
+      "defending_champions": [
+        {
+          "id": "00000",
+          "member": false,
+          "name": " United States"
+        }
+      ]
+    }
+  ]
+}
