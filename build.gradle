@@ -31,9 +31,6 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: "kotlin-spring"
 apply plugin: "kotlin-jpa"
-//kapt {
-//    generateStubs = true
-//}
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'org.springframework.boot'
@@ -77,6 +74,10 @@ dependencies {
     compile "org.hibernate:hibernate-core:5.2.7.Final"
     compile "org.hibernate:hibernate-entitymanager:5.2.7.Final"
     compile "org.hibernate:hibernate-java8:5.2.7.Final"
+
+    //Running javascript from java
+    compile group: 'org.mozilla', name: 'rhino', version: '1.7.10'
+    compile group: 'io.apigee.trireme', name: 'trireme-jar', version: '0.9.3'
 
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
     implementation 'com.beust:klaxon:3.0.1'

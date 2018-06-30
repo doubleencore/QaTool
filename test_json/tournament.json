@@ -1,0 +1,106 @@
+{
+  "upcoming_tournaments": [
+    {
+      "id": "r490",
+      "name": "A Military Tribute at The Greenbrier",
+      "location": "The Old White TPC, White Sulphur Springs, WV"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "r471",
+      "purse": "$7,100,000",
+      "course_city_state": "Potomac, MD",
+      "course_name": "TPC Potomac at Avenel Farm",
+      "location": "TPC Potomac at Avenel Farm, Potomac, MD",
+      "start_date": "2018-06-28",
+      "end_date": "2018-07-01",
+      "breaking_news": "",
+      "file": "/opt/PGATour/iPadPublisher/data//static/tournaments/r471/home.xml",
+      "name": "Quicken Loans National",
+      "standings_points": "2,989",
+      "winning_share": "$1,278,000",
+      "current_round": "2",
+      "total_rounds": false,
+      "official": false,
+      "round_status": "Official",
+      "dual_course": false,
+      "field": "not available",
+      "primary_tournament": true,
+      "yardage": "request move to lb",
+      "major_tournament": false,
+      "matchplay_tournament": false,
+      "playoff": false,
+      "scoring_type": 3,
+      "stableford": false,
+      "featured_groups": [],
+      "courses": [
+        {
+          "position": "1",
+          "course_id": "237",
+          "course_name": "TPC Potomac at Avenel Farm"
+        }
+      ]
+    }
+  ],
+  "tv": {
+    "tune_in": [
+      {
+        "network": "GOLF",
+        "end_time_known": true,
+        "live": false,
+        "id": "r471",
+        "start_date": "2018-06-30T03:00:00-04:00",
+        "end_date": "2018-06-30T06:00:00-04:00"
+      },
+      {
+        "network": "FACEBOOK WATCH",
+        "end_time_known": true,
+        "live": true,
+        "id": "r471",
+        "start_date": "2018-06-30T08:30:00-04:00",
+        "end_date": "2018-06-30T13:00:00-04:00"
+      },
+      {
+        "network": "GOLF",
+        "end_time_known": true,
+        "live": true,
+        "id": "r471",
+        "start_date": "2018-06-30T13:00:00-04:00",
+        "end_date": "2018-06-30T14:45:00-04:00"
+      },
+      {
+        "network": "PGA TOUR LIVE",
+        "end_time_known": true,
+        "live": true,
+        "id": "r471",
+        "start_date": "2018-06-30T13:00:00-04:00",
+        "end_date": "2018-06-30T18:00:00-04:00"
+      },
+      {
+        "network": "PGA TOUR RADIO",
+        "end_time_known": true,
+        "live": true,
+        "id": 5,
+        "start_date": "2018-06-30T13:00:00-04:00",
+        "end_date": "2018-06-30T18:00:00-04:00"
+      },
+      {
+        "network": "CBS",
+        "end_time_known": true,
+        "live": true,
+        "id": "r471",
+        "start_date": "2018-06-30T15:00:00-04:00",
+        "end_date": "2018-06-30T18:00:00-04:00"
+      },
+      {
+        "network": "GOLF",
+        "end_time_known": true,
+        "live": false,
+        "id": "r471",
+        "start_date": "2018-06-30T22:00:00-04:00",
+        "end_date": "2018-06-30T02:30:00-04:00"
+      }
+    ]
+  }
+}

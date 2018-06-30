@@ -1,5 +1,7 @@
 package com.tour.qatool.state_builder
 
+import com.tour.qatool.ajv.AjvValidator
+import com.tour.qatool.ajv.ValidationResult
 import com.tour.qatool.models.FileSystemNode
 import com.tour.qatool.models.JsonSchemaNode
 import com.tour.qatool.schema_generation.InitialJsonSchemaGenerator
@@ -75,6 +77,8 @@ class StateBuilderView : DockableView("Schema State Builder") {
                     .action {
 
                     }
+            button("Validate against a JSON file").also { addSpecficWorkspaceItem(it) }
+                    .action { chooseJsonToValidate() }
 
         }
     }
@@ -86,6 +90,29 @@ class StateBuilderView : DockableView("Schema State Builder") {
         if (chosenDirectory != null) {
             val treeList = retrieveListForChosenDirectory(chosenDirectory)
             treeModelList.setAll(treeList)
+        }
+    }
+
+    private fun chooseJsonToValidate() {
+        val fileChooser = FileChooser()
+        fileChooser.title = "Choose a JSON file"
+        val chosenJsonFile = fileChooser.showOpenDialog(currentWindow)
+        if (chosenJsonFile != null) {
+            val allFiles = treeModelList.flatMap { recurseChildren(it) }.filterIsInstance<SchemaStateTreeModel.File>()
+            val matchingFile = allFiles.find { it.file.name == chosenJsonFile.name }
+
+            if(matchingFile != null) {
+                val schemaJson = File(matchingFile.file.parentPath + "/${matchingFile.file.name}")
+                AjvValidator.validate(schemaJson, chosenJsonFile)
+            } else {
+                System.out.println("No matching json schema file")
+            }
+        }
+    }
+
+    private fun recurseChildren(schemaStateTreeModelList: SchemaStateTreeModel): List<SchemaStateTreeModel> {
+        return schemaStateTreeModelList.children().flatMap {
+            recurseChildren(it) + it
         }
     }
 

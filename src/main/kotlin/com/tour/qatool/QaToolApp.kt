@@ -1,5 +1,6 @@
 package com.tour.qatool
 
+import com.tour.qatool.ajv.AjvValidator
 import com.tour.qatool.data.JsonRelationshipRepository
 import com.tour.qatool.data.JsonRepository
 import com.tour.qatool.data.tables.json.JsonSchema
@@ -25,8 +26,8 @@ open class QaToolApp : App(QaToolWorkspace::class) {
 
     override fun init() {
         super.init()
-        springContext = SpringApplication.run(QaToolApp::class.java)
-        springContext.autowireCapableBeanFactory.autowireBean(this)
+//        springContext = SpringApplication.run(QaToolApp::class.java)
+//        springContext.autowireCapableBeanFactory.autowireBean(this)
         FX.dicontainer = object : DIContainer {
             override fun <T : Any> getInstance(type: KClass<T>): T = springContext.getBean(type.java)
         }
@@ -34,15 +35,13 @@ open class QaToolApp : App(QaToolWorkspace::class) {
 
     override fun start(stage: Stage) {
         super.start(stage)
-
         stage.scene.stylesheets.add(QaToolApp::class.java.getResource("file_tree_styles.css").toExternalForm() )
-
     }
 
 
     override fun stop() {
         super.stop()
-        springContext.close()
+        //springContext.close()
     }
 
 
