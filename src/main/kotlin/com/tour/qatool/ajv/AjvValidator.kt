@@ -39,7 +39,7 @@ object AjvValidator {
         System.out.println(ValidationResult.resultHolder)
 
         // Check the exit code
-        System.exit(status.exitCode)
+        //System.exit(status.exitCode)
 
     }
 

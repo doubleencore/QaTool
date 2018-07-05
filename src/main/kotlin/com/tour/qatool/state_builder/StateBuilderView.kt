@@ -23,6 +23,9 @@ import java.io.File
 
 class StateBuilderView : DockableView("Schema State Builder") {
 
+    val itemEditorContainer: ItemEditorContainer by inject()
+
+
     class SchemaStateTreeViewModel : ItemViewModel<SchemaStateTreeModel>() {
 
         val fileSystemType = bind {
@@ -40,22 +43,9 @@ class StateBuilderView : DockableView("Schema State Builder") {
                 else -> null
             }?.toProperty()
         }
-
-
-        val key = bind { (item as? SchemaStateTreeModel.Json)?.key?.toProperty() }
-        val json = bind { (item as? SchemaStateTreeModel.Json)?.json?.toProperty() }
-
-        val requiredKeys = bind { ((item as? SchemaStateTreeModel.Json)?.json as? JsonSchemaNode.Object)?.requiredKeys?.joinToString("\n")?.toProperty() }
-
-        val minItems = bind { ((item as? SchemaStateTreeModel.Json)?.json as? JsonSchemaNode.Array)?.minItems?.toString()?.toProperty() }
-        val maxItems = bind { ((item as? SchemaStateTreeModel.Json)?.json as? JsonSchemaNode.Array)?.maxItems?.toProperty() }
-
-        val minimum = bind { ((item as? SchemaStateTreeModel.Json)?.json as? JsonSchemaNode.Number)?.minimum?.toString()?.toProperty() }
-
-        val minimumLength = bind { ((item as? SchemaStateTreeModel.Json)?.json as? JsonSchemaNode.String)?.minLength?.toString()?.toProperty() }
     }
 
-    val selectedJsonModel = SchemaStateTreeViewModel()
+    val selectedJsonModel: SchemaStateTreeViewModel by inject()
 
 
     override val closeable = SimpleBooleanProperty(false)
@@ -188,24 +178,11 @@ class StateBuilderView : DockableView("Schema State Builder") {
 
                             text = null
                             graphic = textFlow
-//                            when(item.json) {
-//                                is JsonSchemaNode.Boolean ->
-//                                is JsonSchemaNode.Object -> item.json.
-//                                is JsonSchemaNode.Array -> TODO()
-//                                is JsonSchemaNode.Number -> item.json.type
-//                                is JsonSchemaNode.String -> item.json.type
-//                            }
                         }
                     }
                 }
 
                 bindSelected(selectedJsonModel)
-//                selectedJsonModel.rebindOnChange(this) { selection ->
-//                    when(selection) {
-//                        is SchemaStateTreeModel.Json -> {    }
-//                        else -> SchemaStateTreeModel
-//                    }
-//                }
 
                 populate { parent ->
                     val item = parent.value
@@ -219,45 +196,13 @@ class StateBuilderView : DockableView("Schema State Builder") {
             vbox {
                 gridpaneColumnConstraints {
                     percentWidth = 40.0
-
                     style = "-fx-background: #FFFFFF;"
                 }
                 vgrow = Priority.ALWAYS
                 hgrow = Priority.SOMETIMES
                 useMaxHeight = true
 
-
-                hbox {
-                    label("File System Type: ")
-                    label(selectedJsonModel.fileSystemType)
-                }.visibleWhen { selectedJsonModel.fileSystemType.isNotBlank() }
-
-                hbox {
-                    label("File Name: ")
-                    label(selectedJsonModel.fileName)
-                }.visibleWhen { selectedJsonModel.fileName.isNotBlank() }
-
-                form {
-                    fieldset("Json Details") {
-
-                        field("Key") {
-                            textfield(selectedJsonModel.key)
-                        }.visibleWhen { selectedJsonModel.key.isNotBlank() }
-
-                        field("Min Size") {
-                            textfield(selectedJsonModel.minItems)
-                        }.visibleWhen { selectedJsonModel.minItems.isNotBlank() }
-
-                        field("Min Length") {
-                            textfield(selectedJsonModel.minimumLength)
-                        }.visibleWhen { selectedJsonModel.minimumLength.isNotBlank() }
-
-                        field("Required Keys") {
-                            textarea(selectedJsonModel.requiredKeys)
-                        }.visibleWhen { selectedJsonModel.requiredKeys.isNotBlank() }
-                    }
-                }.visibleWhen { selectedJsonModel.key.isNotBlank() }
-
+                this += itemEditorContainer
 
             }.also { GridPane.setVgrow(it, Priority.ALWAYS) }
         }
