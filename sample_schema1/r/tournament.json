@@ -1,0 +1,253 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Tournament",
+    "definitions": {
+        "Tournament": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "upcoming_tournaments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/UpcomingTournament"
+                    }
+                },
+                "tournaments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TournamentElement"
+                    }
+                },
+                "tv": {
+                    "$ref": "#/definitions/Tv"
+                }
+            },
+            "required": [
+                "tournaments",
+                "tv",
+                "upcoming_tournaments"
+            ],
+            "title": "Tournament"
+        },
+        "TournamentElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "purse": {
+                    "type": "string"
+                },
+                "course_city_state": {
+                    "type": "string"
+                },
+                "course_name": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "start_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "end_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "breaking_news": {
+                    "type": "string"
+                },
+                "file": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "standings_points": {
+                    "type": "string"
+                },
+                "winning_share": {
+                    "type": "string"
+                },
+                "current_round": {
+                    "type": "string"
+                },
+                "total_rounds": {
+                    "type": "string"
+                },
+                "official": {
+                    "type": "boolean"
+                },
+                "round_status": {
+                    "type": "string"
+                },
+                "dual_course": {
+                    "type": "boolean"
+                },
+                "field": {
+                    "type": "string"
+                },
+                "primary_tournament": {
+                    "type": "boolean"
+                },
+                "yardage": {
+                    "type": "string"
+                },
+                "major_tournament": {
+                    "type": "boolean"
+                },
+                "matchplay_tournament": {
+                    "type": "boolean"
+                },
+                "playoff": {
+                    "type": "boolean"
+                },
+                "scoring_type": {
+                    "type": "integer"
+                },
+                "stableford": {
+                    "type": "boolean"
+                },
+                "featured_groups": {
+                    "type": "array",
+                    "items": {}
+                },
+                "courses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Course"
+                    }
+                }
+            },
+            "required": [
+                "breaking_news",
+                "course_city_state",
+                "course_name",
+                "courses",
+                "current_round",
+                "dual_course",
+                "end_date",
+                "featured_groups",
+                "field",
+                "file",
+                "id",
+                "location",
+                "major_tournament",
+                "matchplay_tournament",
+                "name",
+                "official",
+                "playoff",
+                "primary_tournament",
+                "purse",
+                "round_status",
+                "scoring_type",
+                "stableford",
+                "standings_points",
+                "start_date",
+                "total_rounds",
+                "winning_share",
+                "yardage"
+            ],
+            "title": "TournamentElement"
+        },
+        "Course": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "position": {
+                    "type": "string"
+                },
+                "course_id": {
+                    "type": "string"
+                },
+                "course_code": {
+                    "type": "string"
+                },
+                "course_name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "course_code",
+                "course_id",
+                "course_name",
+                "position"
+            ],
+            "title": "Course"
+        },
+        "Tv": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tune_in": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TuneIn"
+                    }
+                }
+            },
+            "required": [
+                "tune_in"
+            ],
+            "title": "Tv"
+        },
+        "TuneIn": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "network": {
+                    "type": "string"
+                },
+                "end_time_known": {
+                    "type": "boolean"
+                },
+                "live": {
+                    "type": "boolean"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "start_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "end_date": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "end_date",
+                "end_time_known",
+                "id",
+                "live",
+                "network",
+                "start_date"
+            ],
+            "title": "TuneIn"
+        },
+        "UpcomingTournament": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "location",
+                "name"
+            ],
+            "title": "UpcomingTournament"
+        }
+    }
+}

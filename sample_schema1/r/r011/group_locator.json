@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/GroupLocator",
+    "definitions": {
+        "GroupLocator": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Group"
+                    }
+                }
+            },
+            "required": [
+                "groups"
+            ],
+            "title": "GroupLocator"
+        },
+        "Group": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "course_id": {
+                    "type": "string"
+                },
+                "round": {
+                    "type": "string"
+                },
+                "round_complete": {
+                    "type": "boolean"
+                },
+                "group_id": {
+                    "type": "string"
+                },
+                "hole": {
+                    "type": "string"
+                },
+                "position": {
+                    "$ref": "#/definitions/Position"
+                },
+                "tee_off": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "course_id",
+                "group_id",
+                "hole",
+                "position",
+                "round",
+                "round_complete",
+                "tee_off"
+            ],
+            "title": "Group"
+        },
+        "Position": {
+            "type": "string",
+            "enum": [
+                "-"
+            ],
+            "title": "Position"
+        }
+    }
+}

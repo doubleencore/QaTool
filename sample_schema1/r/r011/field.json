@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Field",
+    "definitions": {
+        "Field": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "players": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Player"
+                    }
+                },
+                "eligible_players": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "eligible_players",
+                "players"
+            ],
+            "title": "Field"
+        },
+        "Player": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pid": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "birthplace": {
+                    "type": "string"
+                },
+                "birthcity": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "short_name": {
+                    "type": "string"
+                },
+                "amateur": {
+                    "type": "boolean"
+                },
+                "is_alternate": {
+                    "type": "boolean"
+                },
+                "relative_position": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "amateur",
+                "birthcity",
+                "birthplace",
+                "country",
+                "first_name",
+                "is_alternate",
+                "last_name",
+                "pid",
+                "relative_position",
+                "short_name"
+            ],
+            "title": "Player"
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Teetimes",
+    "definitions": {
+        "Teetimes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "current_round": {
+                    "type": "string"
+                },
+                "rounds": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Round"
+                    }
+                },
+                "_mode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "_mode",
+                "current_round",
+                "rounds"
+            ],
+            "title": "Teetimes"
+        },
+        "Round": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "round": {
+                    "type": "string"
+                },
+                "groups": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Group"
+                    }
+                }
+            },
+            "required": [
+                "groups",
+                "round"
+            ],
+            "title": "Round"
+        },
+        "Group": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "players": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Player"
+                    }
+                },
+                "course": {
+                    "type": "string"
+                },
+                "course_code": {
+                    "$ref": "#/definitions/CourseCode"
+                },
+                "group_id": {
+                    "type": "string"
+                },
+                "morning_start": {
+                    "type": "boolean"
+                },
+                "start_tee": {
+                    "type": "string"
+                },
+                "start_date": {
+                    "type": "string"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                }
+            },
+            "required": [
+                "course",
+                "course_code",
+                "group_id",
+                "morning_start",
+                "players",
+                "start_date",
+                "start_tee",
+                "status"
+            ],
+            "title": "Group"
+        },
+        "Player": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pid": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "pid"
+            ],
+            "title": "Player"
+        },
+        "CourseCode": {
+            "type": "string",
+            "enum": [
+                "SA"
+            ],
+            "title": "CourseCode"
+        },
+        "Status": {
+            "type": "string",
+            "enum": [
+                "ROUND COMPLETE"
+            ],
+            "title": "Status"
+        }
+    }
+}

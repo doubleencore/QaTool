@@ -1,0 +1,190 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Standings",
+    "definitions": {
+        "Standings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_debug": {
+                    "$ref": "#/definitions/Debug"
+                },
+                "standings_title": {
+                    "type": "string"
+                },
+                "standings_point_title": {
+                    "type": "string"
+                },
+                "thru_tournament_name": {
+                    "type": "string"
+                },
+                "thru_tournament_date": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "round_status": {
+                    "type": "string"
+                },
+                "last_updated": {
+                    "type": "string"
+                },
+                "player_count": {
+                    "type": "string"
+                },
+                "standings": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Standing"
+                    }
+                }
+            },
+            "required": [
+                "_debug",
+                "last_updated",
+                "player_count",
+                "round_status",
+                "standings",
+                "standings_point_title",
+                "standings_title",
+                "thru_tournament_date",
+                "thru_tournament_name"
+            ],
+            "title": "Standings"
+        },
+        "Debug": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "primaryTid": {
+                    "type": "string"
+                },
+                "statsFile": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "primaryTid",
+                "statsFile"
+            ],
+            "title": "Debug"
+        },
+        "Standing": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pid": {
+                    "type": "string"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "short_name": {
+                    "type": "string"
+                },
+                "events_played": {
+                    "type": "string"
+                },
+                "official_total_points": {
+                    "type": "string"
+                },
+                "tour_wins": {
+                    "$ref": "#/definitions/TourWINS"
+                },
+                "top_10_finishes": {
+                    "$ref": "#/definitions/Top10_Finishes"
+                },
+                "points_behind_lead": {
+                    "type": "string"
+                },
+                "official_rank": {
+                    "type": "string"
+                },
+                "prev_rank": {
+                    "type": "string"
+                },
+                "position_change": {
+                    "type": "string"
+                },
+                "group": {
+                    "type": "integer"
+                },
+                "projected_event_points": {
+                    "type": "string"
+                },
+                "projected_rank": {
+                    "type": "string"
+                },
+                "projected_total_points": {
+                    "type": "string"
+                },
+                "projected_sort": {
+                    "type": "integer"
+                },
+                "official_sort": {
+                    "type": "integer"
+                },
+                "projected_group": {
+                    "type": "integer"
+                },
+                "highlight": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "events_played",
+                "first_name",
+                "group",
+                "highlight",
+                "last_name",
+                "official_rank",
+                "official_sort",
+                "official_total_points",
+                "pid",
+                "points_behind_lead",
+                "position_change",
+                "prev_rank",
+                "projected_event_points",
+                "projected_group",
+                "projected_rank",
+                "projected_sort",
+                "projected_total_points",
+                "short_name",
+                "top_10_finishes",
+                "tour_wins"
+            ],
+            "title": "Standing"
+        },
+        "Top10_Finishes": {
+            "type": "string",
+            "enum": [
+                "10",
+                "11",
+                "8",
+                "7",
+                "9",
+                "6",
+                "4",
+                "5",
+                "2",
+                "3",
+                "1",
+                ""
+            ],
+            "title": "Top10_Finishes"
+        },
+        "TourWINS": {
+            "type": "string",
+            "enum": [
+                "3",
+                "5",
+                "4",
+                "1",
+                ""
+            ],
+            "title": "TourWINS"
+        }
+    }
+}

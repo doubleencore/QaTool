@@ -1,0 +1,268 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Course",
+    "definitions": {
+        "Course": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "courses": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/CourseElement"
+                    }
+                }
+            },
+            "required": [
+                "courses"
+            ],
+            "title": "Course"
+        },
+        "CourseElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "position": {
+                    "type": "string"
+                },
+                "previous_course_rank": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "total_yards": {
+                    "type": "string"
+                },
+                "total_par": {
+                    "type": "string"
+                },
+                "grass_fairway": {
+                    "type": "string"
+                },
+                "grass_green": {
+                    "type": "string"
+                },
+                "grass_rough": {
+                    "type": "string"
+                },
+                "height_fairway": {
+                    "type": "string"
+                },
+                "height_green": {
+                    "type": "string"
+                },
+                "height_rough": {
+                    "type": "string"
+                },
+                "stimpmeter": {
+                    "type": "string"
+                },
+                "designer": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "established": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "type": "string"
+                },
+                "longitude": {
+                    "type": "string"
+                },
+                "course_name": {
+                    "type": "string"
+                },
+                "course_id": {
+                    "type": "string"
+                },
+                "host_course": {
+                    "type": "boolean"
+                },
+                "holes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Hole"
+                    }
+                }
+            },
+            "required": [
+                "course_id",
+                "course_name",
+                "designer",
+                "established",
+                "grass_fairway",
+                "grass_green",
+                "grass_rough",
+                "height_fairway",
+                "height_green",
+                "height_rough",
+                "holes",
+                "host_course",
+                "latitude",
+                "location",
+                "longitude",
+                "position",
+                "previous_course_rank",
+                "stimpmeter",
+                "total_par",
+                "total_yards"
+            ],
+            "title": "CourseElement"
+        },
+        "Hole": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hole": {
+                    "type": "string"
+                },
+                "par": {
+                    "type": "string"
+                },
+                "distance": {
+                    "type": "string"
+                },
+                "longest_putt": {
+                    "type": "string"
+                },
+                "plus_bogeys": {
+                    "type": "string"
+                },
+                "birdies": {
+                    "type": "string"
+                },
+                "scoring_average": {
+                    "type": "string"
+                },
+                "greens_in_regulation": {
+                    "type": "string"
+                },
+                "eagles": {
+                    "type": "string"
+                },
+                "closest_to_pin": {
+                    "type": "string"
+                },
+                "long_drive": {
+                    "type": "string"
+                },
+                "driving_accuracy": {
+                    "type": "string"
+                },
+                "bogeys": {
+                    "type": "string"
+                },
+                "aces": {
+                    "type": "string"
+                },
+                "pars": {
+                    "type": "string"
+                },
+                "course_hole_rank": {
+                    "type": "string"
+                },
+                "avg_prox": {
+                    "type": "string"
+                },
+                "avg_drive": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "plotting": {
+                    "$ref": "#/definitions/Plotting"
+                }
+            },
+            "required": [
+                "aces",
+                "avg_drive",
+                "avg_prox",
+                "birdies",
+                "bogeys",
+                "closest_to_pin",
+                "course_hole_rank",
+                "description",
+                "distance",
+                "driving_accuracy",
+                "eagles",
+                "greens_in_regulation",
+                "hole",
+                "long_drive",
+                "longest_putt",
+                "par",
+                "pars",
+                "plotting",
+                "plus_bogeys",
+                "scoring_average"
+            ],
+            "title": "Hole"
+        },
+        "Plotting": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hole_plot_settings": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "green_plot_settings": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                },
+                "pin": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Pin"
+                    }
+                },
+                "tee": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Pin"
+                    }
+                }
+            },
+            "required": [
+                "green_plot_settings",
+                "hole_plot_settings",
+                "pin",
+                "tee"
+            ],
+            "title": "Plotting"
+        },
+        "Pin": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "round": {
+                    "type": "string"
+                },
+                "x": {
+                    "type": "string"
+                },
+                "y": {
+                    "type": "string"
+                },
+                "z": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "round",
+                "x",
+                "y",
+                "z"
+            ],
+            "title": "Pin"
+        }
+    }
+}

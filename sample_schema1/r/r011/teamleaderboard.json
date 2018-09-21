@@ -1,0 +1,143 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Teamleaderboard",
+    "definitions": {
+        "Teamleaderboard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "leaderboard": {
+                    "$ref": "#/definitions/Leaderboard"
+                }
+            },
+            "required": [
+                "leaderboard"
+            ],
+            "title": "Teamleaderboard"
+        },
+        "Leaderboard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "last_updated": {
+                    "type": "string"
+                },
+                "play_type": {
+                    "type": "string"
+                },
+                "scoring_format": {
+                    "type": "string"
+                },
+                "stableford": {
+                    "type": "boolean"
+                },
+                "round_status": {
+                    "type": "string"
+                },
+                "round": {
+                    "type": "string"
+                },
+                "breaking_news": {
+                    "type": "string"
+                },
+                "push_news": {
+                    "type": "boolean"
+                },
+                "tournament_cut": {
+                    "$ref": "#/definitions/TournamentCut"
+                },
+                "weather": {
+                    "$ref": "#/definitions/Weather"
+                },
+                "team_rankings": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "breaking_news",
+                "last_updated",
+                "play_type",
+                "push_news",
+                "round",
+                "round_status",
+                "scoring_format",
+                "stableford",
+                "team_rankings",
+                "tournament_cut",
+                "weather"
+            ],
+            "title": "Leaderboard"
+        },
+        "TournamentCut": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first_player": {
+                    "type": "string"
+                },
+                "show_projected": {
+                    "type": "boolean"
+                },
+                "count": {
+                    "type": "string"
+                },
+                "score": {
+                    "type": "string"
+                },
+                "show": {
+                    "type": "boolean"
+                },
+                "round": {
+                    "type": "string"
+                },
+                "projected_count": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "count",
+                "first_player",
+                "projected_count",
+                "round",
+                "score",
+                "show",
+                "show_projected"
+            ],
+            "title": "TournamentCut"
+        },
+        "Weather": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "condition": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "humidity": {
+                    "type": "string"
+                },
+                "wind_speed": {
+                    "type": "string"
+                },
+                "wind_direction": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "condition",
+                "humidity",
+                "location",
+                "temperature",
+                "wind_direction",
+                "wind_speed"
+            ],
+            "title": "Weather"
+        }
+    }
+}

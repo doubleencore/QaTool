@@ -1,0 +1,306 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/WildcardLeaderboard",
+    "definitions": {
+        "WildcardLeaderboard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "leaderboard": {
+                    "$ref": "#/definitions/Leaderboard"
+                }
+            },
+            "required": [
+                "leaderboard"
+            ],
+            "title": "WildcardLeaderboard"
+        },
+        "Leaderboard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "tournament_cut": {
+                    "$ref": "#/definitions/TournamentCut"
+                },
+                "weather": {
+                    "$ref": "#/definitions/Weather"
+                },
+                "player_rankings": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PlayerRanking"
+                    }
+                }
+            },
+            "required": [
+                "player_rankings",
+                "tournament_cut",
+                "weather"
+            ],
+            "title": "Leaderboard"
+        },
+        "PlayerRanking": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "rounds": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Round"
+                    }
+                },
+                "position": {
+                    "type": "string"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                },
+                "pid": {
+                    "type": "string"
+                },
+                "player_bio": {
+                    "$ref": "#/definitions/PlayerBio"
+                },
+                "player_round": {
+                    "$ref": "#/definitions/PlayerRound"
+                },
+                "group_id": {
+                    "type": "string"
+                },
+                "score": {
+                    "type": "string"
+                },
+                "today": {
+                    "type": "string"
+                },
+                "thru": {
+                    "$ref": "#/definitions/Thru"
+                },
+                "projected_standings": {
+                    "$ref": "#/definitions/OfficialStandings"
+                },
+                "official_standings": {
+                    "$ref": "#/definitions/OfficialStandings"
+                },
+                "standings_position_change": {
+                    "$ref": "#/definitions/OfficialStandings"
+                },
+                "tee_time": {
+                    "type": "string"
+                },
+                "course_id": {
+                    "$ref": "#/definitions/CourseID"
+                },
+                "start_tee": {
+                    "$ref": "#/definitions/StartTee"
+                },
+                "has_video": {
+                    "type": "boolean"
+                },
+                "course_code": {
+                    "$ref": "#/definitions/CourseCode"
+                },
+                "isWildcard": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "course_code",
+                "course_id",
+                "group_id",
+                "has_video",
+                "official_standings",
+                "pid",
+                "player_bio",
+                "player_round",
+                "position",
+                "projected_standings",
+                "rounds",
+                "score",
+                "standings_position_change",
+                "start_tee",
+                "status",
+                "tee_time",
+                "thru",
+                "today"
+            ],
+            "title": "PlayerRanking"
+        },
+        "PlayerBio": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "is_amateur": {
+                    "type": "boolean"
+                },
+                "first_name": {
+                    "type": "string"
+                },
+                "short_name": {
+                    "type": "string"
+                },
+                "last_name": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "country",
+                "first_name",
+                "is_amateur",
+                "last_name",
+                "short_name"
+            ],
+            "title": "PlayerBio"
+        },
+        "Round": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "round": {
+                    "type": "string"
+                },
+                "score": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "round",
+                "score"
+            ],
+            "title": "Round"
+        },
+        "TournamentCut": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first_player": {
+                    "type": "string"
+                },
+                "show_projected": {
+                    "type": "boolean"
+                },
+                "count": {
+                    "type": "string"
+                },
+                "score": {
+                    "type": "string"
+                },
+                "show": {
+                    "type": "boolean"
+                },
+                "round": {
+                    "type": "string"
+                },
+                "projected_count": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "count",
+                "first_player",
+                "projected_count",
+                "round",
+                "score",
+                "show",
+                "show_projected"
+            ],
+            "title": "TournamentCut"
+        },
+        "Weather": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "condition": {
+                    "type": "string"
+                },
+                "temperature": {
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "humidity": {
+                    "type": "string"
+                },
+                "wind_speed": {
+                    "type": "string"
+                },
+                "wind_direction": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "condition",
+                "humidity",
+                "location",
+                "temperature",
+                "wind_direction",
+                "wind_speed"
+            ],
+            "title": "Weather"
+        },
+        "CourseCode": {
+            "type": "string",
+            "enum": [
+                "PC",
+                ""
+            ],
+            "title": "CourseCode"
+        },
+        "CourseID": {
+            "type": "string",
+            "enum": [
+                "687",
+                ""
+            ],
+            "title": "CourseID"
+        },
+        "OfficialStandings": {
+            "type": "string",
+            "enum": [
+                "-"
+            ],
+            "title": "OfficialStandings"
+        },
+        "PlayerRound": {
+            "type": "string",
+            "enum": [
+                "2",
+                ""
+            ],
+            "title": "PlayerRound"
+        },
+        "StartTee": {
+            "type": "string",
+            "enum": [
+                "1",
+                "10",
+                ""
+            ],
+            "title": "StartTee"
+        },
+        "Status": {
+            "type": "string",
+            "enum": [
+                "active",
+                "wd"
+            ],
+            "title": "Status"
+        },
+        "Thru": {
+            "type": "string",
+            "enum": [
+                "17",
+                "16",
+                "F",
+                "F*",
+                "17*",
+                "-"
+            ],
+            "title": "Thru"
+        }
+    }
+}
